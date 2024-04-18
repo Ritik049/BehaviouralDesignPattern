@@ -1,4 +1,5 @@
-# BehaviouralDesignPattern: These design pattern concerned with  algorithms and  the assignment of responsibilities between objects.
+# BehaviouralDesignPattern: 
+These design pattern concerned with  algorithms and  the assignment of responsibilities between objects.
 
 # Types:
 

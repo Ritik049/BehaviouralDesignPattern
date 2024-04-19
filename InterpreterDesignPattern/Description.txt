@@ -1,0 +1,18 @@
+This design pattern  is used to define a grammar for a language and to provide an interpreter to interpret sentence in that language.
+Used to interpret expressions or commands in custom languages.
+
+//We here make expression interface and made cocrete implementation of experession as per need,
+//Interface expression has interpret function which is decided on basis of concrete implementation
+
+
+Structure: suppose adding two number with having subtracting two numbers
+//Add two number = number1 + number2  , take number1 and number 2 and add them this is interpretation, we have interpreter
+
+//Add two number(Number1 , Number2) (you cant understand)---> go to interpreter ---> NUmber1 + number2(you can understand)
+//Here instead of makeing interpreter class,  because for various expression there is various interpreters, so in expression itself we put interpreter function.
+
+
+1)Expression interface : have int interpret()
+2)Concrete Expressions have their own implementation for interpreting function
+
+

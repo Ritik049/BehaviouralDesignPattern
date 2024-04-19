@@ -1,0 +1,19 @@
+It lets you pass on request along a chain of handlers. Upon receiving a request each handler decides either to process the request or to pass it to the next handler in the chain.
+
+
+Ex. Expense approving mechanism
+
+Suppose you are working in a company and there are multiple employees,and you are building a system for processing expense report in a company.
+Each expense reports need to be approved by different levels of authority based on the amount of the expense.
+
+Handlers--> TeamLead, Manager, Director.
+Chain--->Handlers are linked to form a chain
+
+Structure
+1)Interface handler --> void handleExpense(ExpenseReport report);
+2)Expense Report --> has employee name and amount ;
+3)Handlers --> Team lead, Manager,direcottor and these have argument of NextHandler as well
+//for the last one we need not to handle the request so terminate,
+
+
+** REmemeber at interface the request goes not the nexthandler, nexthandler comes in concrete implementation

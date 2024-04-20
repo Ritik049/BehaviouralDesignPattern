@@ -17,3 +17,7 @@ public class Waiter
    }
      
 }
+
+//Without command pattern:  kitchen.prepareBurger() -->request(delegate to reciever through sender without quuee);
+//With command pattern: this command executed through waiter--> He delegates command to appropriate reciever with supporting queue operations.
+

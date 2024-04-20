@@ -1,0 +1,17 @@
+This pattern lets you to make methods/request as object, and help to decouple sender and reciever to avoid tight coupling,
+and also perform queue operations and support do/undo operations.
+
+
+//Suppose you are in a restaurant, here you order burger from kitchen, so only, kitchen.makeBurger() call, 
+//But in restaurant there is multiple customers, who want to give order, so there comes waiter,
+//Waiter firstly take orders/(commands) (QUEUE FUNCTIONALITY) and after all that order he/she place the order,
+
+
+//HERE The client(customer) communicate directly with the waiter(invoker) , who then delegates the command(order) to the appropriate receiver(Kitchen staff) for execution.
+//In first look it may seem to chain responsibility principle, but due to queue operations it supposed to be command pattern.
+
+//Structure
+1)Interface order -->void execute()
+2)ConcreteOrders ---> burgerOrder, pizzaOrder  //take arguments as kitchen(As they can decide to particular kitchen);
+3)Waiter(invoker) --> it firstly take commands then execute those orders,
+4)Kitchen(reciever)--> it prepares orders.

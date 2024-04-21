@@ -1,0 +1,9 @@
+Lets you save and restore the previous state of an object without revealing the details of implementation.
+
+Problem : We are using textEditor and we need to insert some images or want some formatting but after this we remove ,but agian we want this.
+so our textEditor app should have this functionality that it can perform undo operations.
+
+Structrue:
+1)TextEditor --> Originator
+2)TextMemento --> Memento  --> It acttually save the state/content (this is pamphlet like in a careTaker(history))
+3)History--->careTaker  

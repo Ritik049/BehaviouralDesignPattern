@@ -1,0 +1,16 @@
+It lets you reduce chaotic dependencies, between objects. The pattern restricts direct communication between the objects and forces them to collaborate only via mediator object.
+
+Supppose there is airline and aeroplanes ,
+Aeroplanes  are near to land at airport and we need to warn if they are close to each other
+
+now multiple aeroplanes if only know about each other, then following consequence happen,
+
+If new aeroplane needs to be added then we need to modfiy all the classes then violates OCP
+
+Structrue)
+1) ATCMediator  -> void registerAircraft(Aircraft aircraft) -> void sendPosition(Aircraft aircraft, int position)
+2)ConcreteMediator,  have arrayList holding aricrafts.
+3)interface Aircraft --> void sendPosition(int position), int getPosition(); //sending to mediator
+4)Concrete Airplane -->   
+
+

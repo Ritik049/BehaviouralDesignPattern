@@ -1,0 +1,12 @@
+This pattern lets you traverse  elements of a collections without exposing its underlying representation(list,stack,tree)etc.
+//getNext() and hasMore();
+
+
+//Need : Using for loop we need to iterate it again and again , but due to iterator () we may reach a specific position for later access.
+
+
+Structrue: 
+1)Task --> indivudual Task  //have name and completed state
+2)TaskList--> implements Iterable<task> -->have list and overRide itearator(); --> returns iterator
+3)TaskIterator--> implement Iterator<Task> //set index initially 0. and hasNext, next();
+

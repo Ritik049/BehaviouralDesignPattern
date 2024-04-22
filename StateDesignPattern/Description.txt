@@ -1,0 +1,17 @@
+Lets an object alter its behaviour when its internal state changes. It appears as if the object changed its class.
+
+Need of state design Pattern
+1) No need to use  complex conditionals if else in a  single main class as our tendency is to maintain it clean.
+2)Flexible behaviour: Objects can change their behaviour at runtime by changing their state. 
+3)Centralised state management: State pattern centralised state -specific behaviour, with in state classes,making its easier to manage and modify each state independently.
+4)Open closed principle: Allowing addition of new state, without modifying exisiting code.
+
+
+Structrue: 
+1) Interface TraffcicLightState{
+    void handleRequest()
+}
+2) RedState --> implement TrafficLightState 
+3)GreenState--> implement TraffcicLightState
+4)YellowState-->implement TrafficLightState
+4)TrafficLight =--> context class representing the traffic light system.

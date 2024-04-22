@@ -1,0 +1,15 @@
+This design patterns lets you add additional functionalities, without changing the object structure, without changing the classes of the elements themselves.
+It allows you to separate the algorithm from the object structure on which it operates.
+
+//Helps to code reuse and promote OCP
+
+structure
+1)Shape interface: void accept(Visitor visitor);
+2)Circle implements shape: 
+3)Square implements shape;
+4)Visitor interface;
+5)Areacalculator -->implements Visitor. 
+
+Here in interface itself we use just only two implementation, or we can use if else also,  in concrete implementation
+
+

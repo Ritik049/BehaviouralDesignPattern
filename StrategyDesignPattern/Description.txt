@@ -1,0 +1,16 @@
+This lets you define a family of algorithms, put each of them into a separate class and make their objects interchangeable.
+
+Suppose you build a navigation app for casual travelers.
+One of most unique feature is route planning.
+First version is build for roads which tells shortest path, but later we need another route that is on vacation , by build walking routes.
+
+Strategy pattern suggests that you take a class that does something specific in a lot of different ways and extract all of these algorithms, into separate classes called strategies.
+
+EXample for sorting we have different algorithms,
+
+//Structure 
+1)Strategy Interface --> void sort()
+2)BubbleSort  --->Concrete Strategy
+3)Quick Sort ---> Concrete Strategy
+4)Sorting Context  --> Context class using a sorting Strategy
+
